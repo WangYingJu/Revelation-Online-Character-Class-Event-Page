@@ -1,0 +1,1028 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* font-size: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 0px;
+  background-color: #000;
+}
+
+.logo {
+  display: block;
+  width: 7%;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  position: absolute;
+}
+
+
+/* 帳號及登出icon */
+.player-info {
+  display: flex;
+  flex-direction: row;
+  /* padding: 5px; */
+  top: 1vw;
+  right: 1vw;
+  position: absolute;
+}
+
+.player-info .account {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.player-info .account p {
+  font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif, Helvetica, Arial;
+  font-size: 1.2vw;
+  color: #fff;
+}
+
+.player-info .sign-out {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.player-info .sign-out img {
+  display: flex;
+  width: 2.5vw;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.player-info .sign-out img:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+/* 主視覺  */
+
+.d-sm-none {
+  display: block;
+}
+
+.d-sm-block {
+  display: none;
+}
+
+.main-visual img {
+  width: 100%;
+}
+
+.main-bn {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 活動bn */
+.main-bn .bg {
+  width: 100%;
+}
+
+.main-bn .bn {
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+}
+
+.main-bn .bn img {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 共用樣式 */
+.container .bg {
+  width: 100%;
+}
+
+
+/* .container .bn {
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  position: absolute;
+  margin: 0 auto;
+} */
+
+/* 參加辦法 */
+.event img {
+  width: 100%;
+}
+
+.event {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+}
+
+.content {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  width: 100%;
+}
+
+.d-sm-none {
+  display: block;
+}
+
+.wrap {
+  width: 58%;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
+  /* padding: 40px; */
+}
+
+.step-box {
+  font-size: 1.6vw;
+  padding: 1.6vw;
+  color: #fff4dd;
+  border: 2px solid #fff4dd;
+}
+
+.step-line {
+  width: 38%;
+  height: 1px;
+  background: linear-gradient(to right, #fff4dd, #fff4dd 5px, transparent 5px, transparent);
+  /* 畫虛線 */
+  background-size: 10px 100%;
+}
+
+.link,
+.link2,
+.link3 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 0.2vw;
+}
+
+.link img {
+  width: 18vw;
+}
+
+.link img:hover,
+.link2 img:hover,
+.link3 img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+
+.list {
+  padding: 23px 80px;
+}
+
+.list li {
+  font-size: 1.4vw;
+  color: #fff4dd;
+  line-height: 1.4;
+}
+
+li+li {
+  margin-top: 0.5vw;
+}
+
+.box {
+  /* border: 0px #5b201f solid; */
+  border-radius: 20px;
+  background-color: #4e070794;
+  padding: 30px 10px 20px 20px;
+  /* margin-top: 1vw; */
+}
+
+.box-tt {
+  width: 8vw;
+  border: 2px #fff4dd solid;
+  border-radius: 100px;
+  font-size: 1.4vw;
+  color: #fff4dd;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.box .list li {
+  font-size: 1.2vw;
+  color: #fff4dd;
+  line-height: 1.5;
+}
+
+.box .list img {
+  padding-top: 1.2vw;
+  width: 110%;
+  margin-left: -2.5vw;
+}
+
+/* 共用盒內P段落 */
+.box p {
+  font-size: 1.2vw;
+  color: #fee56e;
+  text-align: center;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
+}
+
+
+
+
+/* 低於 1200px 的時候要改變的樣式 */
+@media screen and (max-width: 1280px) {
+  .content {
+    top: 5px;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+
+  .list {
+    padding: 10px 40px;
+  }
+
+  .list li {
+    font-size: 1.8vw;
+    color: #fff4dd;
+    line-height: 1.8;
+  }
+
+  li+li {
+    margin-top: 0.2vw;
+  }
+
+  .box-tt {
+    border: 1px #fff4dd solid;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .box .list img {
+    padding-top: 0.2vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
+/* 收件資料確認 */
+.main-info img {
+  width: 100%;
+}
+
+.main-info {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* remark擇一顯示 或 都不顯示 */
+.remark,
+.remark2 {
+  font-size: 1.2vw;
+  text-align: center;
+  /* margin-top: 1.2vw; */
+}
+
+.remark {
+  color: #fee56e;
+}
+
+.remark2 {
+  color: #ff4242;
+}
+
+.form {
+  width: 100%;
+  padding-top: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.form-box {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.1vw;
+  margin-bottom: 1.2vw;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.form-th {
+  font-size: 1.2vw;
+  color: #fff4dd;
+  flex: 1 1 33.333333%;
+}
+
+.form-title {
+  text-align: right;
+  padding-right: 1.2vw;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-wrap .form-td4:nth-child(even) {
+  padding: 0 8px;
+}
+
+.form-td1,
+.form-td2 {
+  flex: 1 1 33.333333%;
+}
+
+.form-td1 {
+  padding-right: 4px;
+}
+
+.form-td2 {
+  padding-left: 4px;
+}
+
+.form-td3 {
+  flex: 1 1 66.666666%;
+}
+
+.form-td4 {
+  flex: 1 1 33.333333%;
+}
+
+/* 移除樣式 */
+select {
+  width: 100%;
+  height: 28px;
+  padding: 5px 15px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0;
+  border: 0 solid #fff;
+  text-align: center;
+  color: #000;
+  /* line-height: 1;
+   */
+  /*將預設的select選擇框樣式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* 添加箭頭樣式 */
+  background: url("..//images/angle-down-solid.svg") no-repeat scroll 96% center #fff;
+  background-size: 2vw 2vw;
+  outline: 0;
+}
+
+/* 移除樣式 */
+input {
+  width: 100%;
+  height: 28px;
+  padding: 5px 15px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0;
+  border: 0;
+  text-align: center;
+  color: #000;
+  /* line-height: 1;
+   */
+  /*將預設的select選擇框樣式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+
+.link2 img {
+  width: 18vw;
+  margin: 0.5vw;
+}
+
+
+.form-button {
+  background-color: unset;
+  border: unset;
+}
+
+
+
+/* 低於 1200px 的時候要改變的樣式 */
+@media screen and (max-width: 1199.98px) {
+  .form {
+    width: 80%;
+  }
+
+  .form-th {
+    font-size: 1.8vw;
+  }
+
+  .form-box {
+    margin-bottom: 0.5vw;
+  }
+}
+
+
+/* 每月贈禮介紹 */
+.main-gift img {
+  width: 100%;
+}
+
+.main-gift {
+  position: relative;
+  z-index: 1;
+}
+
+.main-gift .content img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  /* margin-top: -2vw; */
+}
+
+.main-gift .content .wrap {
+  width: 80%;
+}
+
+.main-gift .content {
+  top: 0;
+}
+
+
+/* 立牌中間圍繞的寶藏圖 */
+.center-gift {
+  top: 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.main-gift .content .center-gift img {
+  width: 29%;
+  margin-top: 10vw;
+}
+
+
+/* 立牌頭像的最外層容器 */
+.main-circle {
+  top: 0;
+  width: 9vw;
+  height: 9vw;
+  /* padding: 20px; */
+  /* background: rgba(79, 11, 152, 0.5); */
+  margin: 5.5vw 0 0 35.3%;
+  z-index: 5;
+  position: absolute;
+}
+
+
+/* .center-gift {
+  top: 14vw;
+  margin-left: -15vw;
+  position: absolute;
+  z-index: 4;
+}
+
+.main-gift .content .main-circle .center-gift img {
+  width: 60%;
+} */
+
+
+
+
+/* 立牌頭像的 a 連結 */
+.circle-box {
+  margin: 0 auto;
+  display: block;
+  transform-origin: 50% 20vw;
+  position: absolute;
+  z-index: 5;
+}
+
+
+/* 立牌頭像的設定 */
+.circle-box-setting {
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(..//images/eventA/220x220_circle_off.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* 頭像的外框 */
+.circle-box-setting::after {
+  content: '';
+  width: 127%;
+  height: 127%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("..//images/eventA/270x270_circle_frame.png");
+  position: absolute;
+  top: -13.5%;
+  left: -13.5%;
+}
+
+/* 立牌頭像狀態顯示*/
+.circle-status {
+  z-index: 5;
+  position: absolute;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+
+/* 立牌頭像顯示完成狀態 */
+.circle-complete {
+  background-image: url(..//images/eventA/220x220_circle_complete.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+/* 立牌頭像顯示失敗狀態*/
+.circle-fail {
+  background-image: url(..//images/eventA/220x220_circle_Fail.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+
+
+
+/* 低於 1200px 的時候要改變的樣式 */
+@media screen and (max-width: 1199.98px) {
+  .main-gift .content img {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+
+/* 成就獎勵 */
+.main-bonus {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-bonus img {
+  width: 100%;
+}
+
+/* 活動bn */
+.main-bonus .bg {
+  width: 100%;
+}
+
+.main-bonus .bn {
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+}
+
+.main-bonus .bn img {
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+/* 問卷調查 */
+.main-question img {
+  width: 100%;
+}
+
+.main-question {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-question .content {
+  top: -26vw;
+}
+
+.main-question .content .wrap {
+  margin-top: 2vw;
+}
+
+.main-question p {
+  top: -26vw;
+  font-size: 1.6vw;
+  color: #fff4dd;
+  text-align: center;
+  margin: 1.6vw;
+  line-height: 1.6;
+}
+
+.link3 img {
+  width: 18vw;
+  margin: 0.5vw;
+}
+
+
+
+/* 注意事項 */
+.main-attention img {
+  width: 100%;
+}
+
+.main-attention {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.main-attention .content {
+  top: 1vw;
+  width: 100%;
+}
+
+.main-attention .content .wrap {
+  width: 68%;
+}
+
+.list2 {
+  padding-left: 16px;
+}
+
+.list2 li {
+  font-size: 1.2vw;
+  color: #fff4dd;
+  line-height: 1.4;
+}
+
+li+li {
+  margin-top: 0.5vw;
+}
+
+.key-number {
+  font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif, Helvetica, Arial;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .logo {
+    width: 110px;
+    margin-top: 1vw;
+    margin-left: 1vw;
+  }
+}
+
+
+
+
+/* 手機版 */
+@media screen and (max-width: 575.98px) {
+  .logo {
+    width: 22%;
+    margin-top: 4vw;
+    margin-left: 4vw;
+  }
+
+
+  /* 帳號及登出icon */
+  .player-info {
+    top: 2vw;
+    right: 1vw;
+  }
+
+  .player-info .account p {
+    font-size: 4vw;
+  }
+
+  .player-info .sign-out img {
+    width: 12vw;
+  }
+
+
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+
+  .wrap {
+    width: 90%;
+
+  }
+
+  /* 活動bn */
+  .main-bn .bn img {
+    width: 90%;
+    margin-top: -3vw;
+  }
+
+  /* 參加辦法 */
+  .step {
+    margin: 0 auto;
+  }
+
+  .box {
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-top: 5px;
+  }
+
+  .box-tt {
+    width: 30vw;
+    border: 1px #fff4dd solid;
+    /* border-radius: 100px; */
+    font-size: 5vw;
+    /* color: #fff4dd; */
+    padding: 3px;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin: 2.5vw 0 2.5vw 0;
+  }
+
+
+
+  .list {
+    /* padding: 10px 20px; */
+    padding: 10px 20px 10px 24px;
+  }
+
+  .list li {
+    font-size: 4.5vw;
+    line-height: 1.5;
+    /* padding-left: 8px; */
+  }
+
+  .key-number {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 4vw;
+  }
+
+  .list li+li {
+    margin-top: 5vw;
+  }
+
+  .box .list li {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+
+
+
+
+
+
+  /* 收件資料區塊 */
+  .remark,
+  .remark2 {
+    font-size: 3.5vw;
+  }
+
+  .form {
+    width: 100%;
+    padding-top: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .form-box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1vw auto;
+  }
+
+  .form-th {
+    font-size: 4.2vw;
+    width: 100%;
+    flex: 1 1 100%;
+    justify-content: left;
+  }
+
+  .form-title {
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .form-td1,
+  .form-td2 {
+    margin-right: 1.6vw;
+    width: 47%;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+  }
+
+  .form-td3 {
+    margin-right: 1.6vw;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+
+  .form-wrap .form-td4:nth-child(even) {
+    padding: 0 6px;
+  }
+
+  select {
+    background-size: 5vw 5vw;
+    padding: 5px 5px;
+  }
+
+  input {
+    background-size: 5vw 5vw;
+    padding: 5px 5px;
+  }
+
+
+  /* 每月贈禮 */
+  .main-gift .content .wrap {
+    width: 100%;
+  }
+
+  .main-gift .content .wrap img {
+    width: 100%;
+    margin: -5vw auto 2vw auto;
+  }
+
+  .main-rectangle {
+    width: 70%;
+    margin: 5vw auto 0 auto;
+  }
+
+  .main-rectangle {
+    /* width: 500px; */
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: #000; */
+  }
+
+  .rectangle-box {
+    /* width: 100%; */
+    width: 32vw;
+    height: 32vw;
+    /* flex: 1 1 50%; */
+    display: flex;
+    position: relative;
+
+  }
+
+  .rectangle-box-setting {
+    width: 100%;
+    background-image: url(..//images/eventA/220x220_circle_off.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .circle-status {
+    width: 32vw;
+    height: 32vw;
+    border-radius: 0;
+  }
+
+  /* 成就獎勵 */
+  .main-bonus .bn img {
+    width: 85%;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+
+  /* 問券調查 */
+  .main-question .content {
+    top: -62vw;
+  }
+
+  .main-question p {
+    /* top: -26vw; */
+    font-size: 4vw;
+    /* color: #fff4dd;
+    text-align: center;
+    margin: 1.6vw;
+    line-height: 1.6; */
+  }
+
+
+
+  /* 注意事項 */
+  .main-attention .content .wrap {
+    width: 80%;
+  }
+
+  .list2 {
+    padding-left: 8px;
+  }
+
+  .list2 li {
+    font-size: 3.5vw;
+    color: #fff4dd;
+    line-height: 1.4;
+  }
+
+  /* 共用 */
+  .link img,
+  .link2 img,
+  .link3 img {
+    width: 50vw;
+    margin: 2vw;
+  }
+
+  /* 共用盒內P段落 */
+  .box p {
+    font-size: 3.5vw;
+  }
+}
+
+
+.bt-box {
+  width: 100%;
+  background: linear-gradient(to right, blue, pink);
+}
+
+.bt-box p {
+
+  font-size: 2vw;
+  padding: 1vw 2vw;
+  margin: 1vw;
+}
+
+
+
+/* 立牌頭像 */
+.month5 {
+  background-image: url(..//images/eventA/220x220_circle_Q5.jpg);
+}
+
+.month6 {
+  background-image: url(..//images/eventA/220x220_circle_Q6.jpg);
+}
+
+.month7 {
+  background-image: url(..//images/eventA/220x220_circle_Q7.jpg);
+}
+
+.month8 {
+  background-image: url(..//images/eventA/220x220_circle_Q8.jpg);
+}
+
+.month9 {
+  background-image: url(..//images/eventA/220x220_circle_Q9.jpg);
+}
+
+.month10 {
+  background-image: url(..//images/eventA/220x220_circle_10.jpg);
+}
+
+.month11 {
+  background-image: url(..//images/eventA/220x220_circle_11.jpg);
+}
+
+.month12 {
+  background-image: url(..//images/eventA/220x220_circle_12.jpg);
+}
